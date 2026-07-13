@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom'
 import {
   Button,
   ButtonSize,
@@ -18,7 +19,7 @@ type AccessRightsSidepageProps = {
 }
 
 export function AccessRightsSidepage({ isOpen, onClose }: AccessRightsSidepageProps) {
-  return (
+  return createPortal(
     <Sidepage
       isOpen={isOpen}
       onClose={onClose}
@@ -54,6 +55,7 @@ export function AccessRightsSidepage({ isOpen, onClose }: AccessRightsSidepagePr
           {accessRights.closeLabel}
         </Button>
       </SidepageFooter>
-    </Sidepage>
+    </Sidepage>,
+    document.body,
   )
 }

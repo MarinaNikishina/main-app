@@ -1,16 +1,11 @@
-import { type MouseEvent, useState } from 'react'
-import { Link, Text, VStack } from '@moysklad/uikit'
+import { useState } from 'react'
+import { Button, ButtonSize, ButtonVariants, Link, Text, VStack } from '@moysklad/uikit'
 import { instruction } from '../../data/mockData'
 import { AccessRightsSidepage } from '../AccessRightsSidepage/AccessRightsSidepage'
 import styles from './InstructionAside.module.css'
 
 export function InstructionAside() {
   const [accessOpen, setAccessOpen] = useState(false)
-
-  function openAccess(event: MouseEvent<HTMLAnchorElement>) {
-    event.preventDefault()
-    setAccessOpen(true)
-  }
 
   return (
     <>
@@ -23,9 +18,16 @@ export function InstructionAside() {
           <Link href="#">{instruction.link}</Link>
         </div>
         <div className={styles.accessCard}>
-          <Link href="#access-rights" onClick={openAccess}>
+          <Button
+            type="button"
+            variant={ButtonVariants.FRAMELESS}
+            size={ButtonSize.M}
+            noPadding
+            className={styles.accessButton}
+            onClick={() => setAccessOpen(true)}
+          >
             {instruction.accessLink}
-          </Link>
+          </Button>
         </div>
       </aside>
       <AccessRightsSidepage isOpen={accessOpen} onClose={() => setAccessOpen(false)} />
