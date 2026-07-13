@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background: #1f75a8;
+  color: #fff;
+  padding-right: 8px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  flex: 1;
+}
+
+.logo {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #0d4a9e 0%, #036ce5 100%);
+  border-radius: 4px;
+}
+
+.nav {
+  display: flex;
+  align-items: stretch;
+  height: 60px;
+  overflow: hidden;
+}
+
+.navItem,
+.navItemActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 77px;
+  height: 60px;
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: #c6dcea;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.navItemActive {
+  background: rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.navLabel {
+  font-size: 11px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.iconBtn {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 11px 10px 16px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.userName {
+  font-size: 13px;
+  line-height: 18px;
+  color: #f7f7f7;
+}
+
+.userEmail {
+  font-size: 13px;
+  line-height: 18px;
+  color: #c6dcea;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5f6d79, #9fa7af);
+}

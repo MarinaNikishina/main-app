@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="44" y2="44"><stop stop-color="#036CE5"/><stop offset="1" stop-color="#FF8A00"/></linearGradient></defs>
+  <rect width="44" height="44" rx="8" fill="url(#g)"/>
+  <text x="22" y="28" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">3в1</text>
+</svg>

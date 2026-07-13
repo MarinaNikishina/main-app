@@ -1,0 +1,149 @@
+.variantBar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #091739;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.page {
+  min-height: 100vh;
+  background: var(--bg-secondary, #f1f4f9);
+  --variant-bar-height: 0px;
+}
+
+.variantBarInner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.variantBarTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.back {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.back:hover {
+  opacity: 1;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  flex: 1;
+  min-width: 220px;
+}
+
+.summary {
+  font-size: 13px;
+  opacity: 0.75;
+  max-width: 640px;
+}
+
+.pager {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.pagerGroup {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: flex-start;
+  padding: 2px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.pagerGroupLabel {
+  padding: 0 4px;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  opacity: 0.55;
+  user-select: none;
+}
+
+.pagerGroupLinks {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.pageLink,
+.pageActive {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+.pageLink {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.pageLink:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.pageActive {
+  background: #036ce5;
+}
+
+.main {
+  width: 100%;
+  max-width: 1600px;
+  min-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 20px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.heroRow,
+.cardsRow {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.heroRow > :first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    min-width: 0;
+  }
+
+  .heroRow,
+  .cardsRow {
+    flex-direction: column;
+  }
+}

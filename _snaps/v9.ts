@@ -1,0 +1,13 @@
+  {
+    id: 9,
+    slug: 'pre-install',
+    title: 'До установки · полный текст',
+    summary: 'Текст шире (60%), медиа читаемое. Длинное описание без сжатия.',
+    layout: 'split',
+    textShare: 0.6,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 4,
+    includeVideo: true,
+    series: 'base',
+  },

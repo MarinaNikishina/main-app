@@ -1,0 +1,81 @@
+.card {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.body {
+  width: 100%;
+}
+
+.titleRow {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.field,
+.fieldGrow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.fieldGrow {
+  flex: 1;
+}
+
+.ellipsis {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.autoRenewValue {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.autoRenewText {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.footnote {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  background: var(--bg-secondary, #f1f4f9);
+  border-radius: 8px;
+}

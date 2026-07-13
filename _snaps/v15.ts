@@ -1,0 +1,15 @@
+  {
+    id: 15,
+    slug: 'comp-pairs',
+    title: 'Две карточки · листание парами',
+    summary:
+      'Текст слева ≤50%. Сразу видны 2 средних кадра с заголовком на превью; стрелки листают парами.',
+    layout: 'composition',
+    composition: 'pairs',
+    textShare: 0.5,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 6,
+    includeVideo: true,
+    series: 'composition',
+  },

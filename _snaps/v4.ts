@@ -1,0 +1,13 @@
+  {
+    id: 4,
+    slug: 'two-images',
+    title: 'Два кадра · превью + лента',
+    summary: 'Короткий текст + 2 изображения. Главный кадр и миниатюры.',
+    layout: 'split',
+    textShare: 0.5,
+    textLength: 'short',
+    compact: false,
+    mediaCount: 2,
+    includeVideo: false,
+    series: 'base',
+  },

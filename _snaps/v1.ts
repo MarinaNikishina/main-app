@@ -1,0 +1,13 @@
+  {
+    id: 1,
+    slug: 'text-only',
+    title: 'Только текст',
+    summary: 'Короткое описание, медиа нет. Текст на всю ширину той же карточки.',
+    layout: 'split',
+    textShare: 1,
+    textLength: 'short',
+    compact: false,
+    mediaCount: 0,
+    includeVideo: false,
+    series: 'base',
+  },

@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'ALS Hauss', sans-serif;
+  font-feature-settings: 'kern' on, 'liga' on, 'calt' on, 'lnum' 1, 'tnum' 1;
+  background: var(--bg-secondary, #f1f4f9);
+  color: var(--text-primary, #091739);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--button-primary-normal, #036ce5);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

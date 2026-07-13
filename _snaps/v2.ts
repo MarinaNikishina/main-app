@@ -1,0 +1,13 @@
+  {
+    id: 2,
+    slug: 'one-image',
+    title: 'Одно фото · 50/50',
+    summary: 'Короткий текст + 1 картинка 16:9. Базовый split без слайдера.',
+    layout: 'split',
+    textShare: 0.5,
+    textLength: 'short',
+    compact: false,
+    mediaCount: 1,
+    includeVideo: false,
+    series: 'base',
+  },

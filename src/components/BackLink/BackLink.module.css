@@ -1,0 +1,12 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--button-primary-normal, #036ce5);
+}
+
+.link img {
+  flex-shrink: 0;
+}

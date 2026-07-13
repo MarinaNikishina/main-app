@@ -1,0 +1,135 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.about {
+  min-width: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  white-space: pre-wrap;
+}
+
+.paragraph {
+  white-space: pre-wrap;
+}
+
+.media {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mainMedia {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 230 / 129.35;
+  border: 1px solid var(--border-normal, #d1d6df);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f1f4f9;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoBadge {
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.navPrev,
+.navNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.navPrev {
+  left: 10px;
+}
+
+.navNext {
+  right: 10px;
+}
+
+/* Figma primary-l — поверх медиа */
+.primaryL {
+  --cb-button-color: #fff;
+  --cb-button-background: rgba(1, 4, 11, 0.5);
+  --cb-button-hover-color: #fff;
+  --cb-button-hover-background: rgb(1, 4, 11);
+  --cb-button-focus-color: #fff;
+  --cb-button-focus-background: rgb(1, 4, 11);
+  --cb-button-active-color: #fff;
+  --cb-button-active-background: rgb(1, 4, 11);
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.primaryL:hover,
+.primaryL:focus-visible,
+.primaryL:active {
+  border-color: #fff;
+}
+
+.primaryL svg path {
+  stroke: currentColor;
+}
+
+.thumbs {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.thumb,
+.thumbActive {
+  flex: 0 0 77.75px;
+  width: 77.75px;
+  height: 43.73px;
+  padding: 0;
+  border: 1px solid var(--border-normal, #d1d6df);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+}
+
+.thumbActive {
+  border-color: var(--button-primary-normal, #036ce5);
+}
+
+.thumb img,
+.thumbActive img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

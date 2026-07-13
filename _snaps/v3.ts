@@ -1,0 +1,13 @@
+  {
+    id: 3,
+    slug: 'one-video',
+    title: 'Одно видео · 50/50',
+    summary: 'Короткий текст + видео 16:9 с бейджем. Клик открывает галерею.',
+    layout: 'split',
+    textShare: 0.5,
+    textLength: 'short',
+    compact: false,
+    mediaCount: 1,
+    includeVideo: true,
+    series: 'base',
+  },

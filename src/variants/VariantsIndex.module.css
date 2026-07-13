@@ -1,0 +1,149 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg-secondary, #f1f4f9);
+  padding: 40px 24px 80px;
+}
+
+.header {
+  max-width: 880px;
+  margin: 0 auto 32px;
+}
+
+.section {
+  max-width: 880px;
+  margin: 0 auto 40px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: var(--text-primary, #091739);
+}
+
+.sectionLead {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-secondary, #6b778c);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--text-secondary, #6b778c);
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--text-primary, #091739);
+}
+
+.lead {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-secondary, #6b778c);
+}
+
+.currentLink {
+  font-size: 14px;
+  color: var(--text-accent, #036ce5);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+}
+
+.cardMuted {
+  background: #fff;
+  border-radius: 12px;
+  opacity: 0.72;
+}
+
+.cardLink {
+  display: flex;
+  gap: 16px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+
+.cardLinkDetailed {
+  display: flex;
+  gap: 16px;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: inherit;
+  align-items: flex-start;
+}
+
+.cardLink:hover,
+.cardLinkDetailed:hover {
+  background: rgba(3, 108, 229, 0.04);
+  border-radius: 12px;
+}
+
+.cardMuted .cardLink:hover,
+.cardMuted .cardLinkDetailed:hover {
+  opacity: 1;
+}
+
+.num {
+  flex: 0 0 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--bg-secondary, #f1f4f9);
+  font-weight: 600;
+  color: var(--text-primary, #091739);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary, #091739);
+}
+
+.cardSummary {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-secondary, #6b778c);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.tags span {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-secondary, #f1f4f9);
+  color: var(--text-secondary, #6b778c);
+}

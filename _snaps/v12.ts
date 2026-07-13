@@ -1,0 +1,15 @@
+  {
+    id: 12,
+    slug: 'comp-rail',
+    title: 'Горизонтальная лента карточек',
+    summary:
+      'Текст слева ≤50%. Справа горизонтальный слайдер средних карточек (~260px) с заголовками.',
+    layout: 'composition',
+    composition: 'rail',
+    textShare: 0.45,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 6,
+    includeVideo: true,
+    series: 'composition',
+  },

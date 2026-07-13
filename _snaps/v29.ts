@@ -1,0 +1,15 @@
+  {
+    id: 29,
+    slug: 'gallery-three-no-thumbs',
+    title: 'Галерея 3+ · без превью',
+    summary: 'Как вариант 5 без ленты превью: стрелки на кадре, подпись под карточкой.',
+    layout: 'split',
+    textShare: 0.5,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 3,
+    includeVideo: false,
+    showThumbs: false,
+    captionPlacement: 'below',
+    series: 'base',
+  }

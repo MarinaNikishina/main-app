@@ -1,0 +1,148 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cardConstrained {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.inner {
+  width: 100%;
+}
+
+.innerConstrained {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+}
+
+/* Без overflow: иначе скролл не зайдёт в правый паддинг карточки */
+.innerScrollEdge {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 32px;
+  flex-shrink: 0;
+}
+
+.headerControls {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.layout {
+  display: grid;
+  gap: 20px;
+  align-items: start;
+  min-width: 0;
+}
+
+.layoutConstrained {
+  flex: 1 1 auto;
+  min-height: 0;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.split,
+.stack {
+  width: 100%;
+}
+
+.layoutScrollEdge {
+  flex: 1 1 auto;
+  min-height: 0;
+  align-items: start;
+  width: calc(100% + 20px);
+  max-width: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* 9px + полоса ~11px = 20px правого паддинга; сетка как в варианте 26 */
+  padding-right: 9px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(9, 23, 57, 0.28) transparent;
+}
+
+.layoutScrollEdge::-webkit-scrollbar {
+  width: 11px;
+}
+
+.layoutScrollEdge::-webkit-scrollbar-thumb {
+  background: rgba(9, 23, 57, 0.28);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.layoutScrollEdge::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.textCol,
+.mediaCol {
+  min-width: 0;
+}
+
+.mediaColSticky {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  z-index: 1;
+}
+
+.textCol {
+  width: 100%;
+  max-width: 100%;
+}
+
+.textColNarrow {
+  min-width: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.textColScroll {
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 0;
+  align-self: stretch;
+  padding-right: 20px;
+  scrollbar-gutter: stable;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .split {
+    grid-template-columns: 1fr !important;
+  }
+
+  .textCol {
+    max-width: 100%;
+  }
+
+  .textColNarrow {
+    max-width: 600px;
+  }
+}

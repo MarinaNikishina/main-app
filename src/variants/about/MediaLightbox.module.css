@@ -1,0 +1,58 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: rgba(1, 4, 11, 0.92);
+}
+
+.lightboxBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+}
+
+.lightboxClose {
+  --cb-button-color: #fff;
+  --cb-button-background: transparent;
+  --cb-button-hover-color: #fff;
+  --cb-button-hover-background: rgba(255, 255, 255, 0.12);
+}
+
+.lightboxClose svg path {
+  stroke: currentColor;
+}
+
+.lightboxStage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 20px 32px;
+  min-height: 0;
+}
+
+.lightboxImage {
+  max-width: min(1200px, 90vw);
+  max-height: calc(100vh - 120px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightboxNav {
+  --cb-button-color: #fff;
+  --cb-button-background: rgba(255, 255, 255, 0.12);
+  --cb-button-hover-color: #fff;
+  --cb-button-hover-background: rgba(255, 255, 255, 0.22);
+  flex-shrink: 0;
+}
+
+.lightboxNav svg path {
+  stroke: currentColor;
+}

@@ -1,0 +1,15 @@
+  {
+    id: 30,
+    slug: 'gallery-four-fixed-thumbs',
+    title: 'Галерея 4 · размер как у 8',
+    summary:
+      'Как вариант 6: длинный текст и слайдер, но 4 фото. Превью того же размера, по левому краю.',
+    layout: 'split',
+    textShare: 0.5,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 4,
+    includeVideo: false,
+    thumbSlots: 8,
+    series: 'base',
+  },

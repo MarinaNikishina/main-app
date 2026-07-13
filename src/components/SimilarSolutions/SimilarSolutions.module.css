@@ -1,0 +1,108 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.subheader {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.titleBlock {
+  flex: 1;
+  min-width: 0;
+}
+
+.filters {
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-shrink: 0;
+  padding-bottom: 0;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  height: 188px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.cardBody {
+  flex: 1;
+  min-width: 0;
+  height: 148px;
+  justify-content: space-between;
+}
+
+.mainText {
+  flex: 1;
+  min-height: 0;
+}
+
+.cardTitle {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vendor {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .cardBody {
+    height: auto;
+  }
+}

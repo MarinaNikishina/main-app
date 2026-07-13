@@ -1,0 +1,15 @@
+  {
+    id: 14,
+    slug: 'comp-bento',
+    title: 'Bento · акцент + мозаика',
+    summary:
+      'Текст слева ≤50%. Справа один чуть крупнее сверху, остальные средней сеткой. Не fullscreen-hero.',
+    layout: 'composition',
+    composition: 'bento',
+    textShare: 0.45,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 5,
+    includeVideo: true,
+    series: 'composition',
+  },

@@ -1,0 +1,15 @@
+  {
+    id: 13,
+    slug: 'comp-playlist',
+    title: 'Плейлист · превью + подпись',
+    summary:
+      'Текст слева ≤50%. Справа вертикальный список: среднее превью + название. Скролл списка.',
+    layout: 'composition',
+    composition: 'playlist',
+    textShare: 0.5,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 6,
+    includeVideo: true,
+    series: 'composition',
+  },

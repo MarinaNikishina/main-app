@@ -1,0 +1,13 @@
+  {
+    id: 8,
+    slug: 'media-top',
+    title: 'Медиа сверху на всю ширину',
+    summary: 'Крупный 16:9 на всю контентную область, текст под ним. 5 кадров.',
+    layout: 'stack-media',
+    textShare: 1,
+    textLength: 'short',
+    compact: false,
+    mediaCount: 5,
+    includeVideo: true,
+    series: 'base',
+  },

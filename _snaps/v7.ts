@@ -1,0 +1,13 @@
+  {
+    id: 7,
+    slug: 'media-left',
+    title: 'Медиа слева',
+    summary: 'Та же сетка, колонки зеркально. Длинный текст + 4 кадра.',
+    layout: 'split-flip',
+    textShare: 0.5,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 4,
+    includeVideo: true,
+    series: 'base',
+  },

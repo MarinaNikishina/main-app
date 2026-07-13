@@ -1,0 +1,15 @@
+  {
+    id: 11,
+    slug: 'comp-tiles',
+    title: 'Сетка равных превью',
+    summary:
+      'Текст слева ≤50%. Справа сетка 2×N средних 16:9 — без большого кадра. Клик → lightbox.',
+    layout: 'composition',
+    composition: 'tiles',
+    textShare: 0.5,
+    textLength: 'long',
+    compact: false,
+    mediaCount: 6,
+    includeVideo: true,
+    series: 'composition',
+  },

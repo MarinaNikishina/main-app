@@ -1,0 +1,42 @@
+.card {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.vendorRow {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  align-items: flex-start;
+  background: var(--bg-secondary, #f1f4f9);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.messengers {
+  flex-wrap: wrap;
+}
+
+.messenger {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.messenger img {
+  flex-shrink: 0;
+}
