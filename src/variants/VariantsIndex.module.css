@@ -47,11 +47,6 @@
   color: var(--text-secondary, #6b778c);
 }
 
-.currentLink {
-  font-size: 14px;
-  color: var(--text-accent, #036ce5);
-}
-
 .list {
   list-style: none;
   margin: 0;

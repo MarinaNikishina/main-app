@@ -59,9 +59,6 @@ export function VariantsIndex() {
         <p className={styles.lead}>
           Группы объединены общим дизайном; внутри группы отличается число медиа-карточек.
         </p>
-        <a href="#/current" className={styles.currentLink}>
-          Открыть текущую страницу (как сейчас)
-        </a>
       </header>
 
       {groups.map((group) => (
