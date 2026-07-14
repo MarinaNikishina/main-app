@@ -421,7 +421,7 @@
 
 .pairFrame {
   aspect-ratio: 16 / 9;
-  min-height: 160px;
+  width: 100%;
 }
 
 .pairScrim {
@@ -459,8 +459,6 @@
 
 @media (max-width: 1100px) {
   .tiles,
-  .pairsGrid,
-  .pairsGridWide,
   .bento {
     grid-template-columns: 1fr;
   }
